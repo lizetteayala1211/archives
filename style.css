@@ -1,0 +1,1414 @@
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(220, 226, 227);
+  background-attachment: fixed;
+  color: rgb(0, 0, 255);
+  font-family: Arial;
+  font-size: 18px;
+  line-height: 1.5;
+  padding-top: 40px;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-body {
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+.nav {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+/*  position: absolute;
+  top: 7vh;
+  left: 0;*/
+  flex-grow: 1;
+/*  flex-shrink: 3;*/
+}
+
+.left {
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  align-content: center;
+  height: 70%;
+  width: 10%; 
+  border: 1px solid rgb(0, 0, 255);
+  padding: 10px 0px;
+  margin-left: 22px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+a#logo-1 {
+  height: 100%;
+  width: 100%;
+}
+
+#logo {
+  background-image: url("css/assets/icons/swiss-institute-logo.png"); /* The image used */
+  height: 100%;
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain; /* Resize the background image to cover the entire container */
+/*  border: 1px solid rgb(0, 0, 255);*/
+/*  padding: 5px;*/
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid rgb(0, 0, 255);
+  border-right: 1px solid rgb(0, 0, 255);  
+  height: 100%;
+  width: 25%;
+  padding: 10px 40px;
+}
+
+.middle-top {
+  padding-bottom: 10px;
+}
+
+.middle-top, .middle-bottom {
+  display: flex;
+  flex-direction: row;
+  height: 4.5vh;
+}
+
+.browse { 
+  margin-right: 10px;
+/*  height: 100%;*/
+  width: 100%;
+}
+
+#one.browse {
+  margin-top: 1px;
+  width: 135%;
+  text-align: center;
+}
+
+.browse#left {
+  margin-right: 0px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: rgb(0, 0, 255);
+    padding: 19px 32px;
+    font-weight:bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.browse:link {
+    color: rgb(0, 0, 255);
+    border: 1px solid rgb(0, 0, 255);
+    padding: 0px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.browse:hover {color:#ffffff;
+    background-color: rgb(0, 0, 255);
+} 
+
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 30%;
+  height: 125%;
+/*  border-right: 1px solid rgb(0, 0, 255);*/
+}
+
+input {
+  width: 100%;
+}
+
+input[type=text] {
+  border: 1px solid rgb(0, 0, 255);
+  padding: 5px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: rgba(220, 226, 227);
+  color: rgb(0, 0, 255);
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  border-left: 1px solid rgb(0, 0, 255);
+  padding: 5px 40px;
+  cursor: pointer;
+  height: 110%;
+}
+
+.about:hover {color:#ffffff;
+    background-color: rgb(0, 0, 255);
+} 
+
+.about {
+  border: 1px solid rgb(0, 0, 255);
+  padding: 10px 40px;
+}
+
+/* SEPARATION (TOP) LINE CSS */
+
+.sep-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  height: 5vh;
+  width: 94%;
+  margin-top: 40px;  
+  margin-right: 20px;
+  border-bottom: 1px solid rgb(0, 0, 255);
+}
+
+/*  ARCHIVE YEARS CSS */
+  
+.archive {
+  width: 94%;
+  max-width: 100%;
+/*  margin: 0px auto;*/
+  padding-top: 45px;
+  padding-left: 28px;
+
+}
+
+.archive1 {
+  display: flex;
+  height: 20vh;
+/*  margin-top: -20px;*/
+}
+
+.year {
+  color: rgb(0, 0, 255);
+  padding: 14px 25px;
+  box-shadow: -1px -1px rgb(0, 0, 255), inset -1px -1px 0 0  rgb(0, 0, 255);
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  cursor: pointer;
+} 
+
+.year:link, .year:visited, .year:hover, .year:active {
+    color: white !important;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+.year:hover {
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.overlay{
+    position: relative;
+    bottom: 0;
+/*    top: 10;*/
+    right: 0;
+    text-align: left;
+    font-size: 10px;
+    padding: 40px 0px;
+    width: 100%;
+
+}
+
+#overall-link {
+  padding: 0;
+  font-weight: normal;
+  text-align: left;
+  text-decoration: none;
+  display: flex;  
+  width: 16.7%;
+  height: 100%;
+}
+
+#overall-link:hover {
+  padding: 0;
+  font-weight: normal;
+  text-align: left;
+  text-decoration: none;
+  display: flex;  
+  width: 16.7%;
+  height: 100%;
+}
+
+/* PER YEAR BACKGROUND IMAGE'S CSS */
+
+.year.one:hover {
+  background-image: url("css/assets/images/1986.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.two:hover {
+  background-image: url("css/assets/images/1987.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.three:hover {
+  background-image: url("css/assets/images/1988.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.four:hover {
+  background-image: url("css/assets/images/1989.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.five:hover {
+  background-image: url("css/assets/images/1990.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.six:hover {
+  background-image: url("css/assets/images/1991.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.seven:hover {
+  background-image: url("css/assets/images/1992.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.eight:hover {
+  background-image: url("css/assets/images/1993.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.nine:hover {
+  background-image: url("css/assets/images/1994.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.ten:hover {
+  background-image: url("css/assets/images/1995.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.eleven:hover {
+  background-image: url("css/assets/images/1996.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.twelve:hover {
+  background-image: url("css/assets/images/1997.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.thirteen:hover {
+  background-image: url("css/assets/images/1998.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.fourteen:hover {
+  background-image: url("css/assets/images/1999.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.fifteen:hover {
+  background-image: url("css/assets/images/2000.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.sixteen:hover {
+  background-image: url("css/assets/images/2001.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.seventeen:hover {
+  background-image: url("css/assets/images/2002.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.eighteen:hover {
+  background-image: url("css/assets/images/2003.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.nineteen:hover {
+  background-image: url("css/assets/images/2004.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.twenty:hover {
+  background-image: url("css/assets/images/2005.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.twenty-one:hover {
+  background-image: url("css/assets/images/2006.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.twenty-two:hover {
+  background-image: url("css/assets/images/2007.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.twenty-three:hover {
+  background-image: url("css/assets/images/2008.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.twenty-four:hover {
+  background-image: url("css/assets/images/2009.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.twenty-five:hover {
+  background-image: url("css/assets/images/2010.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.twenty-six:hover {
+  background-image: url("css/assets/images/2011.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.twenty-seven:hover {
+  background-image: url("css/assets/images/2012.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.twenty-eight:hover {
+  background-image: url("css/assets/images/2013.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.twenty-nine:hover {
+  background-image: url("css/assets/images/2014.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.thirty:hover {
+  background-image: url("css/assets/images/2015.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.thirty-one:hover {
+  background-image: url("css/assets/images/2016.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.thirty-two:hover {
+  background-image: url("css/assets/images/2017.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.thirty-three:hover {
+  background-image: url("css/assets/images/2018.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.thirty-four:hover {
+  background-image: url("css/assets/images/2019.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.thirty-five:hover {
+  background-image: url("css/assets/images/2020.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+.year.thirty-six:hover {
+  background-image: url("css/assets/images/2021.jpg"); /* The image used */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+}
+
+/* SEPARATION (TOP) LINE CSS */
+
+.sep-line.two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  height: 5vh;
+  width: 94%;
+  margin-top: 40px;  
+  margin-right: 20px;
+  border-bottom: 1px solid rgb(0, 0, 255);
+}
+
+.bottom-break {
+  height: 6vh;
+  color: transparent;
+}
+
+/* ABOUT PAGE CSS */
+
+.copy-container {
+  height: 55vh;
+  margin-left: 30px;
+  margin-right: 40px;
+}
+
+.about-heading {
+  font-size: 25px;
+}
+
+.about.sample {
+  background-color: rgb(0, 0, 255);
+  color: rgba(220, 226, 227)!important;  
+}
+
+.sample-year-container {
+  height: 100%;
+  width: 93%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-self: center;
+/*  background-color: green;*/
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.year-nav-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  width: 10%;
+  background-color: rgb(0, 0, 255);
+}
+
+.year-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 15%;
+  border-bottom: 1px solid rgba(220, 226, 227);
+  color: rgba(220, 226, 227);
+  text-align: center;
+  font-size: 30px;
+}
+
+.year-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 70%;  
+  color: rgba(220, 226, 227);
+  writing-mode: vertical-rl;
+  text-orientation: upright; 
+  font-size: 70px;
+  border-bottom: 1px solid rgba(220, 226, 227); 
+}
+
+.year-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%; 
+  color: rgba(220, 226, 227);
+  text-align: center;
+  font-size: 30px;  
+  cursor: pointer; 
+}
+
+a.year-button {
+  height: 15%;
+  padding: 0px;
+  display: flex;  
+}
+
+.year-button:hover {
+  color: transparent;
+  background-image: url("css/assets/icons/back-arrow.png"); /* The image used */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 70%; /* Resize the background image to cover the entire container */    
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;  
+  height: 100%;
+  width: 60%;
+/*  background-color: white;*/
+}
+
+/* image background by year */
+
+.image {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  }
+
+.image.one {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/1986.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.two {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/1987.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.three {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/1988.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.four {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/1989.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.five {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/1990.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.six {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/1991.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.seven {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/1992.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.eight {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/1993.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.nine {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/1994.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.ten {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/1995.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.eleven {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/1996.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.twelve {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/1997.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.thirteen {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/1998.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.fourteen {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/1999.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.fifteen {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/2000.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.sixteen {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/2001.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.seventeen {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/2002.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.eighteen {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/2003.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.nineteen {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/2004.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.twenty {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/2005.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.twenty-one {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/2006.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.twenty-two {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/2007.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.twenty-three {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/2008.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.twenty-four {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/2009.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.twenty-five {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/2010.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.twenty-six {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/2011.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.twenty-seven {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/2012.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.twenty-eight {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/2013.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.twenty-nine {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/2014.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.thirty {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/2015.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.thirty-one {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/2016.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.thirty-two {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/2017.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.thirty-three {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/2018.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.thirty-four {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/2019.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.thirty-five {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/2020.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+.image.thirty-six {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  border: 1px solid rgb(0, 0, 255);
+  background-image: url("css/assets/images/2021.jpg"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */     
+}
+
+
+.names-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 30%;
+  border-top: 1px solid rgb(0, 0, 255);
+  overflow: scroll !important;
+}
+
+.name-info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  height: auto;
+  width: 94.5%;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom: 1px solid rgb(0, 0, 255);
+  cursor: pointer;
+}
+
+.name-info-container:hover {
+  background-color: rgb(0, 0, 255);
+  color: rgba(220, 226, 227);
+  font-style: italic;  
+}
+
+
+.name-title {
+  height: auto;
+  width: auto;
+}
+
+.name-year {
+  height: auto;
+  width: auto;  
+}
+
+.browse.sample {
+  background-color: rgb(0, 0, 255);
+  color: rgba(220, 226, 227)!important;
+}
+
+/* Sample Slider Year CSS */
+
+.slider-container {
+/*  background-color: green;*/
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 55%;
+}
+
+.slider-nav-container {
+/*  background-color: white;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 20%;
+  width: 100%;  
+}
+
+.slider-nav {
+  border: 1px solid rgb(0, 0, 255);
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  width: 90%;    
+}
+
+.slider-preview-container {
+/*  background-color: red;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 70%;
+  width: 100%;   
+}
+
+/*.slider-container.single-img {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 80%;
+}*/
+
+.slider-preview-container.single-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  width: 100%;   
+}
+
+/*.selection-copy-container.single-img {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 20%;  
+}*/
+
+.slider-preview {
+  border: 1px solid rgb(0, 0, 255);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 90%;    
+}
+
+.slider-date-container {
+/*  background-color: white;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 10%;
+  width: 100%;   
+}
+
+.slider-date {
+/*  border: 1px solid rgb(0, 0, 255);*/
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  height: 100%;
+  width: 90%;  
+}
+
+p.slider-date {
+  font-size: 2.5vh;
+}
+
+.selection-copy-container {
+/*  background-color: yellow;*/
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 35%;  
+}
+
+.selection-info-p-container {
+/*  background-color: white;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  height: 80%;
+  width: 100%;   
+  overflow: hidden; 
+}
+
+.selection-info-p {
+/*  border: 1px solid rgb(0, 0, 255);  */
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 95%;  
+  overflow-y: scroll;    
+}
+
+p.selection-info-p  {
+  font-size: 2.5vh;
+}
+
+.selection-nav-container {
+/*  background-color: red;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  height: 15%;
+  width: 100%;     
+}
+
+.selection-nav {
+  border-top: 1px solid rgb(0, 0, 255); 
+  border-bottom: 1px solid rgb(0, 0, 255); 
+  display: flex;  
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 60%;
+  width: 100%;    
+}
+
+.selection-nav-left-img {
+  display: flex;  
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  height: 100%;
+  width: 30%; 
+  cursor: pointer;
+  background-image: url("css/assets/icons/left-arrow-blue.png"); /* The image used */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 80% 50%;
+}
+
+.selection-nav-left {
+  border-right: 1px solid rgb(0, 0, 255); 
+  display: flex;  
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  height: 100%;
+  width: 50%; 
+  cursor: pointer;
+}
+
+.selection-nav-right {
+  display: flex;  
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  height: 100%;
+  width: 50%; 
+  cursor: pointer;  
+}
+
+.selection-nav-right-img {
+  display: flex;  
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  height: 100%;
+  width: 30%; 
+  cursor: pointer;
+  background-image: url("css/assets/icons/right-arrow-blue.png"); /* The image used */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 80% 50%;
+}
+
+/* Artists List & Exhibtions List Page CSS */
+
+.artist-names-container {
+  margin-left: 20px;
+  margin-right: 30px;
+  border-bottom: 1px solid rgb(0, 0, 255);
+}
+
+.artist-names-heading {
+  font-size: 25px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.artist-names-scroll {
+  overflow-y: scroll;
+  height: 115%;
+  width: 100%;
+}
+
+.artist-name {
+  margin-left: 40px;  
+  font-size: 20px;  
+  cursor: pointer;
+}
+
+.artist-name:hover {
+  font-style: italic; 
+}
+
+a.name-title:link, a.name-title:visited {
+    color: rgb(0, 0, 255);
+    background-color: transparent;
+    padding: 0px 0px;
+    font-weight: normal;
+    text-align: left;
+    text-decoration: none;
+    display: flex;
+}
+
+a.name-title:hover, a.name-title:active { 
+    color: rgba(220, 226, 227);
+    background-color: rgb(0, 0, 255);
+    padding: 0px 0px;
+    font-weight: normal;
+    text-align: left;
+    text-decoration: none;
+    display: flex;
+}
+
+.browse.sample {
+  background-color: rgb(0, 0, 255);
+  color: rgba(220, 226, 227)!important;  
+}
+
+/* Selected Exhibtion Pages CSS */
+
+.name-title.selection {
+  height: auto;
+  width: auto;
+  font-size: 25px !important;
+}
+
+.name-year.selection {
+  height: auto;
+  width: auto;  
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+
+
+
+
+
+
+
+
+
+}
+
