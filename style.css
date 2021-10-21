@@ -104,14 +104,14 @@ a#logo-1 {
   margin-right: 0px;
 }
 
-a:link, a:visited, a:hover, a:active {
+/*a:link, a:visited, a:hover, a:active {
     color: rgb(0, 0, 255);
     padding: 19px 32px;
     font-weight:bold;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-}
+}*/
 
 a.browse:link {
     color: rgb(0, 0, 255);
@@ -148,6 +148,12 @@ input[type=text] {
   box-sizing: border-box;
   background-color: rgba(220, 226, 227);
   color: rgb(0, 0, 255);
+}
+
+input::placeholder {
+  color: rgb(0, 0, 255);
+  font-size: 1.2em;
+  font-family: Arial;
 }
 
 .right {
@@ -1355,6 +1361,12 @@ p.selection-info-p  {
 
 .artist-name:hover {
   font-style: italic; 
+}
+
+a#artist-name, a#artist-name:link, a#artist-name:visited, a#artist-name:hover, a#artist-name:active {
+  padding: 0px !important;
+  font-weight: normal !important;
+  margin-left: 0px !important;
 }
 
 a.name-title:link, a.name-title:visited {
