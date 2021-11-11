@@ -1112,6 +1112,7 @@ a.year-button {
 .name-title {
   height: auto;
   width: auto;
+  margin-right: 8px;
 }
 
 .name-year {
@@ -1406,6 +1407,234 @@ a.name-title:hover, a.name-title:active {
   height: auto;
   width: auto;  
 }
+
+#transparent-previous-button {
+  color: transparent;
+}
+
+#transparent-next-button {
+  color: transparent;
+}
+
+/* Large screens 1440px ----------- */
+@media only screen  and (min-width : 1440px) {
+
+.nav {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    flex-grow: 1;
+    /* flex-shrink: 3; */
+} 
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 70%;
+    width: 10%;
+    border: 1px solid rgb(0, 0, 255);
+    padding: 10px 0px;
+     margin-left: 20px; 
+    margin-right: 40px; 
+    cursor: pointer;
+} 
+
+#one.browse {
+    margin-top: 10px;
+    width: 135%;
+    text-align: center;
+}
+
+#left.browse {
+    margin-right: 0px;
+    padding-top: 10px;
+}
+
+.browse.sample {
+    padding-top: 10px !important;
+    background-color: rgb(0, 0, 255);
+    color: rgba(220, 226, 227)!important;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    border-left: 1px solid rgb(0, 0, 255);
+    /* padding: 5px 30px; */
+    cursor: pointer;
+    height: 110%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    margin-right: 20px;
+    padding-right: 0px;
+}
+
+.about {
+    border: 1px solid rgb(0, 0, 255);
+    padding: 10px 55px;
+}
+
+.sep-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    height: 5vh;
+    width: 95%;
+    margin-top: 40px;
+    margin-right: 0px;
+    border-bottom: 1px solid rgb(0, 0, 255);
+}
+
+.archive {
+  width: 95%;
+  max-width: 100%;
+/*  margin: 0px auto;*/
+  padding-top: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
+.overlay {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    text-align: left;
+    font-size: 10px;
+    padding: 120px 0px 0px 0px;
+    width: 100%;
+}
+
+.sep-line.two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    height: 5vh;
+    width: 95%;
+    margin-top: 40px;
+    /* margin-right: 20px; */
+    border-bottom: 1px solid rgb(0, 0, 255);
+}
+
+.year-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 70%;
+    color: rgba(220, 226, 227);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 100px;
+    border-bottom: 1px solid rgba(220, 226, 227);
+}
+
+.sample-year-container {
+    height: 100%;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-self: center;
+    /* background-color: green; */
+    margin-right: 0px;
+    margin-top: 30px;
+}
+
+.name-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    width: 94%;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid rgb(0, 0, 255);
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.name-title.selection {
+    height: auto;
+    width: auto;
+    font-size: 35px !important;
+}
+
+.name-year.selection {
+    height: auto;
+    width: auto;
+    font-size: 35px !important;
+}
+
+.selection-nav-left {
+    border-right: 1px solid rgb(0, 0, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    height: 100%;
+    width: 50%;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.selection-nav-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    height: 100%;
+    width: 50%;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.artist-names-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom: 1px solid rgb(0, 0, 255);
+}
+
+.artist-names-heading {
+    font-size: 30px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.artist-name {
+    margin-left: 40px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+
+
+}
+
 
 /* ----------- iPhone 4 and 4S ----------- */
 
